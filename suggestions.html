@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suggestions - DIU Suggestions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h2>🎓 DIU Suggestions</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="suggestions.html" class="active">Suggestions</a></li>
+                <li><a href="contributors.html">Contributors</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#" class="login-btn">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <section class="questions-section">
+            <h1>Suggestions</h1>
+            <p>Browse past exam questions by department, course, semester, and exam type.</p>
+
+            <!-- Filter Section -->
+            <div class="filter-container">
+                <div class="filter-header">
+                    <h3>🔽 Filter Questions</h3>
+                </div>
+                
+                <div class="filters">
+                    <div class="filter-group">
+                        <select id="departmentFilter">
+                            <option value="">All Departments</option>
+                            <option value="CSE">CSE</option>
+                            <option value="SWE">SWE</option>
+                            <option value="CIS">CIS</option>
+                            <option value="GEB">GEB</option>
+                            <option value="EEE">EEE</option>
+                            <option value="AGS">AGS</option>
+                            <option value="ITM">ITM</option>
+                            <option value="NFE">NFE</option>
+                            <option value="BBA">BBA</option>
+                            <option value="CE">CE</option>
+                            <option value="TE">TE</option>
+                            <option value="MCT">MCT</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <select id="courseFilter">
+                            <option value="">All Courses</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <select id="semesterFilter">
+                            <option value="">All Semesters</option>
+                            <option value="Spring 26">Spring 26</option>
+                            <option value="Fall 25">Fall 25</option>
+                            <option value="Summer 25">Summer 25</option>
+                            <option value="Spring 25">Spring 25</option>
+                            <option value="Fall 24">Fall 24</option>
+                            <option value="Summer 24">Summer 24</option>
+                            <option value="Spring 24">Spring 24</option>
+                            <option value="Fall 23">Fall 23</option>
+                            <option value="Spring 23">Spring 23</option>
+                            <option value="Fall 22">Fall 22</option>
+                            <option value="Summer 22">Summer 22</option>
+                            <option value="Spring 22">Spring 22</option>
+                            <option value="Fall 21">Fall 21</option>
+                            <option value="Summer 21">Summer 21</option>
+                            <option value="Spring 20">Spring 20</option>
+                            <option value="Summer 19">Summer 19</option>
+                            <option value="Fall 18">Fall 18</option>
+                            <option value="Summer 18">Summer 18</option>
+                            <option value="Spring 18">Spring 18</option>
+                            <option value="Summer 17">Summer 17</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <select id="examTypeFilter">
+                            <option value="">All Exam Types</option>
+                            <option value="Quiz">Quiz</option>
+                            <option value="Mid">Mid</option>
+                            <option value="Final">Final</option>
+                            <option value="Lab Final">Lab Final</option>
+                        </select>
+                    </div>
+
+                    <button id="resetBtn" class="btn btn-reset">Reset Filters</button>
+                </div>
+            </div>
+
+            <!-- Questions Display -->
+            <div class="upload-section">
+                <button class="btn btn-primary">📤 Upload Question</button>
+            </div>
+
+            <!-- Course Cards -->
+            <div id="questionsContainer" class="questions-container">
+                <!-- Questions will be loaded here by JavaScript -->
+            </div>
+
+            <!-- Pagination -->
+            <div id="paginationContainer" class="pagination">
+                <!-- Pagination will be generated here -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>DIU Suggestions</h4>
+                    <p>Access past exam questions from Daffodil International University.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="suggestions.html">Browse Questions</a></li>
+                        <li><a href="contact.html">How It Works</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Account</h4>
+                    <ul>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Register</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 DIU Suggestions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
